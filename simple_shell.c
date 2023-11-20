@@ -41,6 +41,5 @@ int main(void)
 			free(str);
 		}
 	}
-	free(str);
 	return (0);
 }
