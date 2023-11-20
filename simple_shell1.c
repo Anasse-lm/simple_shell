@@ -28,13 +28,12 @@ void simple_shell1(void)
 		{
 			argv[0] = malloc(strlen(str) + 1);
 			strcpy(argv[0], str);
-			execReturn = execv(argv[0], argv);
+			execReturn = execve(argv[0], argv, NULL);
 			if (execReturn == -1)
 			{
-				printf ("./shell: No such file or directory\n");
+				printf("./shell: No such file or directory\n");
+                    		exit(EXIT_FAILURE);
 			}
-			printf("#cisfun$ ");
-			sleep(0);
 		}
 		else
 		{
