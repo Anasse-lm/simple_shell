@@ -11,6 +11,6 @@
  */
 int main(void)
 {
-	simple_shell1(void);
+	simple_shell1();
 	return (0);
 }
