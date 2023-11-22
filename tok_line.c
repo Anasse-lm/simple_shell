@@ -13,8 +13,8 @@ char **tok_line(char *line)
     int size = 0;
     char **result = NULL;
     int i = 0;
+
     if (str == NULL) {
-        printf("str is null\n");
         return (NULL);
     }
     portion = strtok(str, " \t\n");

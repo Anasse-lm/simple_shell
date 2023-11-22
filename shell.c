@@ -4,14 +4,11 @@
  * main - entry point
  * Return: 0.
  */
-int main(int ac, char **av, char **env)
+int main(void)
 {
 	char *line = NULL;
 	int status = 0;
 	char **tokLine = NULL;
-	(void)ac;
-	(void)av;
-	(void)env;
 
 	while (1)
 	{
